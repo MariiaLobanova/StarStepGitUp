@@ -9,6 +9,9 @@ package Claas4.MorningSession;
 //    top: An integer attribute to keep track of the top element's position in the stack.
 //
 
+import java.util.ArrayList;
+import java.util.List;
+
 //Constraints:
 //    The push method should not push an element onto the stack if it's full.
 //    The pop method should not pop an element from the stack if it's empty.
@@ -97,8 +100,19 @@ public class  CustomStack <T>{
                 stackToString.append(", ");
             }
         }
-        System.out.println(stackToString);
+      //  System.out.println(stackToString.toString());
         return stackToString.toString();
+    }
+    public void sort() throws StackOverflowExeption {
+        List<T> list = new ArrayList<>();
+
+        while (!isEmpty()) {
+            list.add(pop());
+        }
+        list.sort(null);
+        for (T s : list) {
+            push(s);
+        }
     }
     public static void main(String[] args) throws StackOverflowExeption, IllegalStateException {
 
@@ -132,10 +146,15 @@ public class  CustomStack <T>{
 
 
 
+
         myStack.peek();
 
         myStack.size();
         myStack.toString();
+
+
+
+
 
 
     }
