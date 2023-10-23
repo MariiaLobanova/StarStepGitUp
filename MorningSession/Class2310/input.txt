@@ -1,0 +1,2 @@
+Exercise 1: Counting Words in a File
+Create a Java program that reads a text file and counts the number of words in it.
