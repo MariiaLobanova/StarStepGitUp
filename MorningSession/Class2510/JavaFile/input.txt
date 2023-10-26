@@ -1,3 +1,4 @@
  Reading from a File
 Ask your students to create a Java program that reads text from a file called "input.txt" using FileReader.
 Instruct them to display the content of the file on the console.
+good thanks
